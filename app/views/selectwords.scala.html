@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="POST">
+        @helper.CSRF.formField
+        <label for="place1">Name a place: </label>
+        <input type="text" name="place1" id="place1"><br>
+
+        <label for="adjective1">An adjective: </label>
+        <input type="text" name="adjective1" id="adjective1"><br>
+
+        <label for="noun1">Select a noun: </label>
+        <select name="noun1" id="noun1">
+            <option value="house">House</option>
+            <option value="horse">Horse</option>
+            <option value="ninja blender">Ninja Blender</option>
+            <option value="flex seal">Flex Seal</option>
+        </select><br>
+
+        <label for="noun2">Another noun: </label>
+        <input type="text" name="noun2" id="noun2"><br>
+
+        <label> Select a verb: </label>
+        <input type="radio" name="verb1" id="verb1-1" value="hi-fived">Hi-Fived
+        <input type="radio" name="verb1" id="verb1-2" value="forked">Forked
+        <input type="radio" name="verb1" id="verb1-3" value="jumped">Jumped
+        <br>
+
+        <label for="place2">Select another place: </label>
+        <select name="place2" id="place2">
+            <option value="Isengard">Isengard</option>
+            <option value="Serenity">Serenity</option>
+            <option value="Gobekli Tepe">Gobekli Tepe</option>
+            <option value="Marvel Cinematic Universe">Marvel Cinematic Universe</option>
+        </select><br>
+
+
+
+
+
+        <input type="submit" value="Generate Story">
+    </form>
+</body>
+</html>
